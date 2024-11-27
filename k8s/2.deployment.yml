@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: httphostnameapp
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: httphostnameapp
+  template:
+    metadata:
+      labels:
+        app: httphostnameapp
+    spec:
+      containers:
+        - image: eliesjebri/httphostnameapp:v1
+          name: httphostnameapp-container
