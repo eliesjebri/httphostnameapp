@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: httphostnameapp
+spec:
+  containers:
+  - name: httphostnameapp-container
+    image: eliesjebri/httphostnameapp:v1
