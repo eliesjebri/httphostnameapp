@@ -19,3 +19,6 @@ docker push eliesjebri/httphostnameapp:<version>
 
 # Run the container
 docker run -d -p 3000:3000 eliesjebri/httphostnameapp:<version>
+
+# Test the App
+curl http://localhost:3000
